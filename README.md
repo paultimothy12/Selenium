@@ -1,4 +1,4 @@
-You cant just run the code easily,
+
 Download(which i used ):
 -Selenium server (grid) - https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.4.0/selenium-server-4.4.0.jar
 -language-specific client drivers : https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.4.0/selenium-java-4.4.0.zip
