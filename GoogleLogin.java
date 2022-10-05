@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 public class GoogleLogin {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\PAUL TIMOTHY\\files\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "YOUR WEBDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		//navigation to google
 		driver.get("https://www.google.co.in/");
@@ -22,13 +22,13 @@ public class GoogleLogin {
 		action.perform();
 		//login 
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		driver.findElement(By.cssSelector("#identifierId")).sendKeys("testsel0007@gmail.com");
+		driver.findElement(By.cssSelector("#identifierId")).sendKeys("NEW EMAIL ADDRESS");
 		WebElement signinclick1= driver.findElement(By.cssSelector("#identifierNext > div > button > div.VfPpkd-RLmnJb"));
 		action.moveToElement(signinclick1);
 		action.click();
 		action.perform();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		driver.findElement(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")).sendKeys("test1209");
+		driver.findElement(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")).sendKeys("YOU PASSWORD");
 		WebElement passnext = driver.findElement(By.cssSelector("#passwordNext > div > button > div.VfPpkd-RLmnJb"));
 		action.moveToElement(passnext);
 		action.click();
